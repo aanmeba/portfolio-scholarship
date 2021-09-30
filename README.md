@@ -1,6 +1,6 @@
 # Portfolio for the diversity scholarship
 
-Please check out the page <a href="https://aanmeba.github.io/portfolio-scholarship/" target="_blank">here</a>
+Please check out the page <a href="https://aanmeba.github.io/portfolio-scholarship/" target="_blank">here</a>.
 
 ## Overview
 
