@@ -48,25 +48,50 @@ btn.addEventListener('click', e => {
         document.querySelector('.interest').innerHTML = `<div>Coding | Running</div>`;
 
         // * add new images
+        // ** create new <div>
         const parentImg = document.querySelector('.intro');
         const newDivForImg = document.createElement('div');
         newDivForImg.classList.add('ref-img');
         parentImg.appendChild(newDivForImg);
 
+        // ** add a gif file
+        const addFig = document.createElement('figure');
         const addGif = document.createElement('img');
+        const addCap = document.createElement('figcaption');
+        
+        addCap.classList.add('cap0');
         addGif.setAttribute('src', 'img/coding.gif');
         addGif.setAttribute('width', '480');
-        newDivForImg.appendChild(addGif);
+        newDivForImg.appendChild(addFig);
+        addFig.appendChild(addGif);
+        addFig.appendChild(addCap);
+        document.querySelector('.cap0').innerHTML = 'I love coding and solving problems!';
         
         let fragment2 = document.createDocumentFragment();
     
         for (let i = 1; i < 8; i++) {
+            let newFig = document.createElement('figure');
             let newImg = document.createElement('img');
+            let newCap = document.createElement('figcaption');
+
             newImg.setAttribute('src', `img/adding${i}.jpg`);
-            fragment2.appendChild(newImg);
+            newCap.classList.add(`cap${i}`);
+
+            fragment2.appendChild(newFig);
+            newFig.appendChild(newImg);
+            newFig.appendChild(newCap);
         }
         
         newDivForImg.appendChild(fragment2);
+
+        // add the descriptions in <figcaption>
+        document.querySelector('.cap1').innerHTML = 'Weather Journal app by using a weather api';
+        document.querySelector('.cap2').innerHTML = 'Travel Planner by using apis';
+        document.querySelector('.cap3').innerHTML = 'Volunteer in the Parkrun';
+        document.querySelector('.cap4').innerHTML = 'Run at least once a week over 5km';
+        document.querySelector('.cap5').innerHTML = 'My longest run is 18km';
+        document.querySelector('.cap6').innerHTML = 'Love trail running too!';
+        document.querySelector('.cap7').innerHTML = 'Registered UTA-22 (22km) next year!';
 
         const lastMsg = document.createElement('div');
         lastMsg.classList.add('msg');
