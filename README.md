@@ -1,5 +1,7 @@
 # Portfolio for the diversity scholarship
 
+Please check out the page <a href="https://aanmeba.github.io/portfolio-scholarship/" target="_blank">here</a>
+
 ## Overview
 
 Short story of myself with images to describe a journey to become a coder.
