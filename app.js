@@ -22,15 +22,29 @@ btn.addEventListener('click', e => {
     
     newDiv.appendChild(fragment);
 
+    // add the old memory
+
     setTimeout(() => {
         document.querySelector('.lds-spinner').remove();
+        document.querySelector('.not-found').innerHTML = `
+        <center>
+            <img src="img/child.gif" width="400px" alt="a little coder"><br>
+            <h3>Old memories having a fun with html tags<br>came to 👩's mind</h3>
+        </center>
+        `;
+    }, 1500);
+    
+
+
+    // add a lightbulb image and comment
+    setTimeout(() => {
         document.querySelector('.not-found').innerHTML = `
         <center>
             <img src="img/lightbulb.gif" width="400px" alt="lightbulb"><br>
             <h3>Full-stack developer!</h3>
         </center>
         `;
-    }, 1500);
+    }, 5000);
 
     setTimeout(() => {
         // after loading the page, scroll up and change the content
@@ -45,7 +59,7 @@ btn.addEventListener('click', e => {
         document.querySelector('h1').style.textShadow = "4px 1px #000";
 
         document.querySelector('span').innerHTML = "has";
-        document.querySelector('.interest').innerHTML = `<div>Coding | Running</div>`;
+        document.querySelector('.interest').innerHTML = `<div>Coding | Running | Baking</div>`;
 
         // * add new images
         // ** create new <div>
@@ -69,7 +83,7 @@ btn.addEventListener('click', e => {
         
         let fragment2 = document.createDocumentFragment();
     
-        for (let i = 1; i < 8; i++) {
+        for (let i = 1; i < 11; i++) {
             let newFig = document.createElement('figure');
             let newImg = document.createElement('img');
             let newCap = document.createElement('figcaption');
@@ -85,13 +99,16 @@ btn.addEventListener('click', e => {
         newDivForImg.appendChild(fragment2);
 
         // add the descriptions in <figcaption>
-        document.querySelector('.cap1').innerHTML = 'Weather Journal app by using a weather api';
-        document.querySelector('.cap2').innerHTML = 'Travel Planner by using apis';
-        document.querySelector('.cap3').innerHTML = 'Volunteer in the Parkrun';
+        document.querySelector('.cap1').innerHTML = 'Weather Journal app using the OpenWeatherMap API';
+        document.querySelector('.cap2').innerHTML = 'Travel Planner using GeoNames, Weatherbit.io, Pixabay APIs';
+        document.querySelector('.cap3').innerHTML = 'Volunteered in the Parkrun';
         document.querySelector('.cap4').innerHTML = 'Run at least once a week over 5km';
         document.querySelector('.cap5').innerHTML = 'My longest run is 18km';
         document.querySelector('.cap6').innerHTML = 'Love trail running too!';
         document.querySelector('.cap7').innerHTML = 'Registered UTA-22 (22km) next year!';
+        document.querySelector('.cap8').innerHTML = 'My first cheesecake...';
+        document.querySelector('.cap9').innerHTML = 'My second cheesecake...RIP';
+        document.querySelector('.cap10').innerHTML = 'Cheesecake with own my receipe!';
 
         const lastMsg = document.createElement('div');
         lastMsg.classList.add('msg');
@@ -99,7 +116,7 @@ btn.addEventListener('click', e => {
 
         lastMsg.innerHTML = `<div>Check out more <a href="https://github.com/aanmeba" target="_blank">projects</a></div>`;
 
-    }, 4000);
+    }, 7000);
 
 });
 
