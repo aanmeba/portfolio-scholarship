@@ -108,7 +108,7 @@ btn.addEventListener('click', e => {
         document.querySelector('.cap7').innerHTML = 'Registered UTA-22 (22km) next year!';
         document.querySelector('.cap8').innerHTML = 'My first cheesecake...';
         document.querySelector('.cap9').innerHTML = 'My second cheesecake...RIP';
-        document.querySelector('.cap10').innerHTML = 'Cheesecake with own my receipe!';
+        document.querySelector('.cap10').innerHTML = 'Cheesecake with my own receipe!';
 
         const lastMsg = document.createElement('div');
         lastMsg.classList.add('msg');
