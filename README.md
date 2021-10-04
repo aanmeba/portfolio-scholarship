@@ -6,7 +6,7 @@ Please check out the page <a href="https://aanmeba.github.io/portfolio-scholarsh
 
 Short story of myself with images to describe a journey to become a coder.
 
-- The best width screen size for this page is 1100 to 1200.
+- The best width screen size for this page is 1350 to 1500.
 
 ## Features
 

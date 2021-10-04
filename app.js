@@ -79,7 +79,7 @@ btn.addEventListener('click', e => {
         newDivForImg.appendChild(addFig);
         addFig.appendChild(addGif);
         addFig.appendChild(addCap);
-        document.querySelector('.cap0').innerHTML = 'I love coding and solving problems!';
+        document.querySelector('.cap0').innerHTML = 'Love coding and solving problems!';
         
         let fragment2 = document.createDocumentFragment();
     
