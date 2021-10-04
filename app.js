@@ -7,41 +7,53 @@ btn.addEventListener('click', e => {
     
     console.log('loading...');
 
-    // create a loading animation when the button clicked
-    const parentDiv = document.querySelector('.not-found');
-    const newDiv = document.createElement('div');
-    newDiv.classList.add('lds-spinner');
-    parentDiv.appendChild(newDiv);
+    // create a function for loading animation when the button clicked
+    function createSpinner() {
+        const parentDiv = document.querySelector('.not-found');
+        const newDiv = document.createElement('div');
+        newDiv.classList.add('lds-spinner');
+        parentDiv.appendChild(newDiv);
 
-    let fragment = document.createDocumentFragment();
-    
-    for (let i = 0; i < 12; i++) {
-        let addNewDiv = document.createElement('div');
-        fragment.appendChild(addNewDiv);
+        let fragment = document.createDocumentFragment();
+        
+        for (let i = 0; i < 12; i++) {
+            let addNewDiv = document.createElement('div');
+            fragment.appendChild(addNewDiv);
+        }
+        
+        newDiv.appendChild(fragment);
     }
-    
-    newDiv.appendChild(fragment);
+
+    // call the function
+    createSpinner();
 
     // add the old memory content
     setTimeout(() => {
         document.querySelector('.lds-spinner').remove();
         document.querySelector('.not-found').innerHTML = `
-        <center>
+        <div class="reload-new">
             <img src="img/child.gif" width="400px" alt="a little coder"><br>
             <h3>Old memories having a fun with html tags<br>came to 👩's mind</h3>
-        </center>
+        </div>
         `;
     }, 1500);
+
+    // add the loading function again
+    setTimeout(() =>  {
+        document.querySelector('.reload-new').remove();
+        createSpinner();
+    }, 4000);
     
     // add a lightbulb image and comment
     setTimeout(() => {
+        document.querySelector('.lds-spinner').remove();
         document.querySelector('.not-found').innerHTML = `
-        <center>
-            <img src="img/lightbulb.gif" width="400px" alt="lightbulb"><br>
+        <div class="reload-new">
+            <img src="img/lightbulb.gif" width="200px" alt="lightbulb"><br>
             <h3>Full-stack developer!</h3>
-        </center>
+        </div>
         `;
-    }, 5000);
+    }, 6000);
 
     setTimeout(() => {
         // after loading the page, scroll up and change the content
@@ -113,7 +125,7 @@ btn.addEventListener('click', e => {
 
         lastMsg.innerHTML = `<div>Check out more <a href="https://github.com/aanmeba" target="_blank">projects</a></div>`;
 
-    }, 7000);
+    }, 8000);
 
 });
 

@@ -88,6 +88,10 @@ h3 {
   margin-left: 0.9rem;
 }
 
+.reload-new {
+  text-align: center;
+}
+
 .msg {
   font-size: 1rem;
   color: gray;
