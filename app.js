@@ -42,7 +42,7 @@ btn.addEventListener('click', e => {
     setTimeout(() =>  {
         document.querySelector('.reload-new').remove();
         createSpinner();
-    }, 4000);
+    }, 4500);
     
     // add a lightbulb image and comment
     setTimeout(() => {
