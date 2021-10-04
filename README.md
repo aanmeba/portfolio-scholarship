@@ -14,4 +14,4 @@ This is a short story of myself with images and gifs to describe **a journey to 
 
 ## Preview
 
-Please check out the page <a href="https://aanmeba.github.io/portfolio-scholarship/" target="_blank">here</a>.
+👉 Please check out the page <a href="https://aanmeba.github.io/portfolio-scholarship/" target="_blank">here</a>.
