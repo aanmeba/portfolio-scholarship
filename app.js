@@ -108,7 +108,7 @@ btn.addEventListener('click', e => {
         newDivForImg.appendChild(fragment2);
 
         // add the descriptions in <figcaption>
-        document.querySelector('.cap1').innerHTML = 'Weather Journal app using the OpenWeatherMap API';
+        document.querySelector('.cap1').innerHTML = 'Certificate of the Udacity Front End Web Developer course';
         document.querySelector('.cap2').innerHTML = 'Travel Planner using GeoNames, Weatherbit.io, Pixabay APIs';
         document.querySelector('.cap3').innerHTML = 'Volunteered in the Parkrun';
         document.querySelector('.cap4').innerHTML = 'Run at least once a week over 5km';
