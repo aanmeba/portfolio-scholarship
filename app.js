@@ -22,8 +22,7 @@ btn.addEventListener('click', e => {
     
     newDiv.appendChild(fragment);
 
-    // add the old memory
-
+    // add the old memory content
     setTimeout(() => {
         document.querySelector('.lds-spinner').remove();
         document.querySelector('.not-found').innerHTML = `
@@ -34,8 +33,6 @@ btn.addEventListener('click', e => {
         `;
     }, 1500);
     
-
-
     // add a lightbulb image and comment
     setTimeout(() => {
         document.querySelector('.not-found').innerHTML = `
